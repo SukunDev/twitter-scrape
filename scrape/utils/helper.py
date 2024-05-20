@@ -4,7 +4,6 @@ import time
 import pickle
 import requests
 import urllib.parse
-from bs4 import BeautifulSoup
 from colorama import *
 
 init(autoreset=True)

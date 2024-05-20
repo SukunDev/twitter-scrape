@@ -1,5 +1,4 @@
 import asyncio
-from tqdm import tqdm
 from .utils import helper
 from .browser import Browser
 from typing import Optional, Dict, List, Any
