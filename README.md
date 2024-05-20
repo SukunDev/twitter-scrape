@@ -56,30 +56,13 @@ mongodump -d bot_scrape -o database_backup
 Sebelum kita menjalankan program kita edit dahulu main.py
 
 ```python
-
 from scrape import Scrape
 
 
 if __name__ == "__main__":
-    # Ganti Keyword dengan keyword yng anda cari
-    keywords = [
-        "film horor",
-        "pendapat film horor",
-        "tanggapan film horor",
-        "film horor trending",
-        "film horor viral",
-        "film horor update",
-        "setelah nonton film horor",
-        "saat nonton film horor",
-        "film horor yg sedang di tunggu",
-        "review film horor",
-        "horor movie",
-        "horor movie trending",
-    ]
-    for keyword in keywords:
-        #ganti username dan password twitter anda
-        scrape = Scrape(username="<username twitter>", password="<password twitter>", keywords=keyword)
-        scrape.run()
+    #ganti username dan password twitter anda
+    scrape = Scrape(username="<username_twitter>", password="<password_twitter>", keywords="film horor")
+    scrape.run()
 ```
 
 baru bisa kita jalankan program
