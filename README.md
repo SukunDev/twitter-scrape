@@ -6,6 +6,8 @@ bot untuk scrapping twitter
 
 ### Persiapan
 
+Install dan masukkan ke dalam environment variable
+
 - [MongoDB](https://www.mongodb.com/try/download/community)
 - [Mongo Shell](https://www.mongodb.com/try/download/shell)
 - [Mongo Database Tools](https://www.mongodb.com/try/download/database-tools)
@@ -37,8 +39,16 @@ pip install -r requirements.txt
 
 ### Migrasi Database
 
+Import
+
 ```bash
 mongorestore ./database_backup/bot_scrape --db bot_scrape
+```
+
+Export
+
+```
+mongodump -d bot_scrape -o database_backup
 ```
 
 ## Run
