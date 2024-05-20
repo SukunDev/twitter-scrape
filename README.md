@@ -51,6 +51,12 @@ Export
 mongodump -d bot_scrape -o database_backup
 ```
 
+export to csv
+
+```
+mongoexport --host localhost --db bot_scrape --collection tweet --type=csv --out film_horor_collection.csv --fields tweet_link,full_text,bookmark_count,entities,extended_entities,favorite_count,quote_count,reply_count,retweet_count,lang,user,created_at
+```
+
 ## Run
 
 Sebelum kita menjalankan program kita edit dahulu main.py
