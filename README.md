@@ -35,6 +35,12 @@ source .venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+### Migrasi Database
+
+```bash
+mongorestore ./database_backup/bot_scrape --db bot_scrape
+```
+
 ## Run
 
 Sebelum kita menjalankan program kita edit dahulu main.py
