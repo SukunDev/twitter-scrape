@@ -2,5 +2,5 @@ from scrape import Scrape
 
 
 if __name__ == "__main__":
-    scrape = Scrape(username="<username_twitter>", password="<password_twitter>", keywords="film horor")
+    scrape = Scrape(username="@bapak71181", password="qwertyui32!", keywords="film horor")
     scrape.run()
